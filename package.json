@@ -5,9 +5,10 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "client": "npm run dev --prefix client",
+    "client": "yarn dev --prefix client",
+    "build": "yarn build --prefix client",
     "server": "nodemon index.js",
-    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "dev": "concurrently \"yarn run server\" \"yarn run client\"",
     "start": "node index.js"
   },
   "keywords": [],
